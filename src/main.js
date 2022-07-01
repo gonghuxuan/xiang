@@ -7,10 +7,15 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+import '@/assets/svg/iconfont.js'
 
 // 设置 js中可以访问 $cdn
 import { $cdn } from '@/config'
 Vue.prototype.$cdn = $cdn
+
+Vue.use(ElementUI)
 
 // 全局引入按需引入UI库 vant
 import '@/plugins/vant'

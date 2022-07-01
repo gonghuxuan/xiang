@@ -8,7 +8,7 @@ export const constantRouterMap = [
     component: () => import('@/views/layouts/index'),
     redirect: '/home',
     meta: {
-      title: '首页',
+      title: 'line',
       keepAlive: false
     },
     children: [
@@ -16,13 +16,13 @@ export const constantRouterMap = [
         path: '/home',
         name: 'Home',
         component: () => import('@/views/home/index'),
-        meta: { title: '首页', keepAlive: false }
+        meta: { title: 'line', keepAlive: false }
       },
       {
         path: '/about',
         name: 'About',
         component: () => import('@/views/home/about'),
-        meta: { title: '关于我', keepAlive: false }
+        meta: { title: '编辑', keepAlive: false }
       }
     ]
   }

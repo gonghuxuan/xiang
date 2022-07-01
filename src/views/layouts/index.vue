@@ -20,18 +20,18 @@ export default {
     return {
       tabbars: [
         {
-          title: '首页',
+          title: 'line',
           to: {
             name: 'Home'
           },
           icon: 'home-o'
         },
         {
-          title: '关于我',
+          title: '编辑',
           to: {
             name: 'About'
           },
-          icon: 'user-o'
+          icon: 'edit'
         }
       ]
     }
@@ -46,3 +46,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.van-tabbar {
+  height: 85px;
+}
+</style>

@@ -1,5 +1,5 @@
 {
-  "name": "vue-h5-template",
+  "name": "gong",
   "version": "2.1.0",
   "description": "A vue h5 template with Vant UI",
   "author": "Sunnie <sunniejs@163.com>",
@@ -9,12 +9,17 @@
     "build": "vue-cli-service build",
     "stage": "vue-cli-service build --mode staging",
     "lint": "vue-cli-service lint",
-    "deps": "yarn upgrade-interactive --latest"
+    "deps": "yarn upgrade-interactive --latest",
+    "upload": "vue-cli-service build && scp -r dist/ root@106.12.118.50:/home/xiang/xiang"
   },
   "dependencies": {
+    "archiver": "^5.3.1",
     "axios": "^0.27.2",
     "core-js": "^3.8.3",
+    "element-ui": "2.13.2",
+    "inquirer": "^8.2.4",
     "lib-flexible": "^0.3.2",
+    "node-ssh": "^12.0.4",
     "regenerator-runtime": "^0.13.5",
     "vant": "^2.10.2",
     "vue": "^2.6.14",
