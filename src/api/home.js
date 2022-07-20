@@ -3,3 +3,5 @@
 
 // import request from '@/utils/request'
 // home api
+const a = 1
+console.log(a)
