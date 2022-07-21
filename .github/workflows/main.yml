@@ -1,4 +1,4 @@
-name: Build app and deploy to Baidu
+name: Build app and deploy to Tencent
 on:
   #监听push操作
   push:
@@ -14,8 +14,6 @@ jobs:
     steps:
     # 使用别人的action
     - uses: actions/checkout@v2
-    with:
-                node-version: '12'
     # 步骤名称
     - name: npm install
       # 步骤执行指令
