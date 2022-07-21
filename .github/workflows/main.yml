@@ -14,6 +14,9 @@ jobs:
     steps:
     # 使用别人的action
     - uses: actions/checkout@v2
+    - uses: actions/setup-node@v2 #nodejs 环境
+      with:
+        node-version: '14'
     # 步骤名称
     - name: npm install
       # 步骤执行指令
