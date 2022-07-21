@@ -33,8 +33,4 @@ jobs:
         pass: ${{ secrets.USER_PASS }}
         connect_timeout: 10s
         local: './dist/*'
-<<<<<<< HEAD
         remote: /home/www/dist
-=======
-        remote: /home/www/dist
->>>>>>> 08f8151a3e0eb8f9c91182e74b198b862631fba5
