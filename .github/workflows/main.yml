@@ -15,7 +15,8 @@ jobs:
     # 使用别人的action
     - uses: actions/checkout@v2
     with:
-                node-version: v14.17.0 
+                node-version: v14.17.0
+                npm-version: v6.14.10
     # 步骤名称
     - name: npm install
       # 步骤执行指令
