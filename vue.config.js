@@ -36,7 +36,7 @@ const { defineConfig } = require('@vue/cli-service')
 //     ]
 //   }
 // }
-
+const timeStamp = new Date().getTime()
 module.exports = defineConfig({
   publicPath: './', // 署应用包时的基本 URL。 vue-router hash 模式使用
   //  publicPath: '/app/', //署应用包时的基本 URL。  vue-router history模式使用
@@ -83,7 +83,8 @@ module.exports = defineConfig({
   },
   configureWebpack: config => {
     config.name = name
-
+    config.output.filename = `static/js/[name].${timeStamp}.js`
+    config.output.chunkFilename = `static/js/[name].${timeStamp}.js`
     // 为生产环境修改配置...
     // if (IS_PROD) {
     //   // externals
